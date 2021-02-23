@@ -21,17 +21,24 @@ namespace UserManagement.Data
 
         public IEnumerable<User> GetAllUsers()
         {
-            var name = "";
+            return users;
+        }
 
-            return from r in users
-                   where string.IsNullOrEmpty(name) || r.Name.StartsWith(name)
-                   orderby r.Name
-                   select r; ;
+        public User Add(User user)
+        {
+            var newUser = new User()
+            {
+                Id = users.Count() + 1,
+                Name = user.Name
+            };
+            users.Add(newUser);
+            return newUser;
         }
 
         public User GetById(int id)
         {
             throw new NotImplementedException();
         }
+
     }
 }

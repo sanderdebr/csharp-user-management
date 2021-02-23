@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagement", "UserManagement.csproj", "{E61494FF-B06D-4462-B520-130E262E7818}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement.Data", "..\UserManagement.Data\UserManagement.Data.csproj", "{81705BB3-832F-44DD-90E9-0519EABA0ED5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagement.Data", "..\UserManagement.Data\UserManagement.Data.csproj", "{81705BB3-832F-44DD-90E9-0519EABA0ED5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement.Core", "..\UserManagement.Core\UserManagement.Core.csproj", "{D0350E24-1330-4759-A3E4-D6683EA5B1A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagement.Core", "..\UserManagement.Core\UserManagement.Core.csproj", "{D0350E24-1330-4759-A3E4-D6683EA5B1A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
