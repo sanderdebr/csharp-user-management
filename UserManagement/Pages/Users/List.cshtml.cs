@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using UserManagement.Core;
 using UserManagement.Data;
 
-namespace UserManagement.Pages
+namespace UserManagement.Pages.Users
 {
     public class ListModel : PageModel
     {
