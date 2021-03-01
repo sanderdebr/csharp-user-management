@@ -34,7 +34,7 @@ namespace UserManagement.Pages.Users
 
             if (result != null)
             {
-                return RedirectToPage("/Users/User?userId=" + result.Id);
+                return Redirect("/Users/User/" + result.Id);
             }
 
             Message = "User not found";
