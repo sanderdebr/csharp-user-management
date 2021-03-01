@@ -1,0 +1,17 @@
+﻿@page
+@model SearchModel
+@{
+}
+
+<h1>Search users</h1>
+
+<form method="post" class="flex flex-col space-y-4 w-56">
+    <p>Username</p>
+    <input class="p-2 border border-gray-300 rounded" asp-for="User.Name" />
+    <button class="p-2 bg-gray-100 rounded" type="submit">Search</button>
+</form>
+
+@if(Model.Message != null)
+{
+    <div class="text-red-600">@Model.Message</div>
+}

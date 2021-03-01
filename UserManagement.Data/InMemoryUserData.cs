@@ -15,7 +15,8 @@ namespace UserManagement.Data
         {
             users = new List<User>()
             {
-                new User { Id = 1, Name = "Tom" }
+                new User { Id = 1, Name = "Tom" },
+                new User { Id = 2, Name = "Kelly" }
             };
         }
 
@@ -37,7 +38,7 @@ namespace UserManagement.Data
 
         public User GetById(int id)
         {
-            throw new NotImplementedException();
+            return users.FirstOrDefault(user => user.Id == id);
         }
 
     }

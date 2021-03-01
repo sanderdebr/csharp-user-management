@@ -3,7 +3,14 @@
 @{
 }
 
-@foreach (var user in Model.Users)
-{
-    <h1>@user.Id</h1>
-}
+<div class="flex flex-col space-y-4">
+    @foreach (var user in Model.Users)
+    {
+        <div class="flex space-x-4">
+            <h1>@user.Id</h1>
+            <h1>@user.Name</h1>
+            <a>Edit</a>
+            <a>Delete</a>
+        </div>
+    }
+</div>

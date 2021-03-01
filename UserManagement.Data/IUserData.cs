@@ -7,9 +7,7 @@ namespace UserManagement.Data
     public interface IUserData
     {
         IEnumerable<User> GetAllUsers();
-
         User GetById(int id);
         User Add(User user);
-
     }
 }

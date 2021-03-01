@@ -33,7 +33,7 @@ namespace UserManagement.Pages.Users
         public IActionResult OnPost()
         {
             userData.Add(User);
-            userData.Commit();
+            // userData.Commit();
             return RedirectToPage("./List");
         }
     }
