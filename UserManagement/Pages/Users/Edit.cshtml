@@ -1,0 +1,12 @@
+﻿@page "{userId:int}"
+@model EditModel
+@{
+}
+
+<h2>Edit user with ID @Model._user.Id</h2>
+
+<form method="post" class="flex flex-col space-y-4 w-56">
+    <p>Name</p>
+    <input class="p-2 border border-gray-300 rounded" asp-for="_user.Name" />
+    <button class="p-2 bg-gray-100 rounded" type="submit">Save</button>
+</form>

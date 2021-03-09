@@ -36,6 +36,16 @@ namespace UserManagement.Data
             return newUser;
         }
 
+        public User Update(User updatedUser)
+        {
+            var user = users.SingleOrDefault(user => user.Id == updatedUser.Id);
+            if (user != null)
+            {
+                user = updatedUser;
+            }
+            return user;
+        }
+
         public User GetById(int id)
         {
             return users.FirstOrDefault(user => user.Id == id);

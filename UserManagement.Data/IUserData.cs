@@ -9,5 +9,6 @@ namespace UserManagement.Data
         IEnumerable<User> GetAllUsers();
         User GetById(int id);
         User Add(User user);
+        User Update(User user);
     }
 }
