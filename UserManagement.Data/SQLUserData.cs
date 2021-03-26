@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,16 @@ namespace UserManagement.Data
             return user;
         }
 
+        public User Delete(int id)
+        {
+            var user = GetById(id);
+            if (user != null)
+            {
+                _database.Users.Remove(user);
+            }
+            return user;
+        }
+
         public IEnumerable<User> GetAllUsers()
         {
             return _database.Users.ToList();
@@ -32,9 +43,16 @@ namespace UserManagement.Data
             return _database.Users.Find(id);
         }
 
+        public int Save()
+        {
+            return _database.SaveChanges();
+        }
+
         public User Update(User user)
         {
-            throw new NotImplementedException();
+            var entity = _database.Users.Attach(user);
+            entity.State = EntityState.Modified;
+            return user;
         }
     }
 }

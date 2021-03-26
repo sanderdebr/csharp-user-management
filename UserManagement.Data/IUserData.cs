@@ -10,5 +10,7 @@ namespace UserManagement.Data
         User GetById(int id);
         User Add(User user);
         User Update(User user);
+        User Delete(int id);
+        int Save();
     }
 }

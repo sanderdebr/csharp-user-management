@@ -51,5 +51,14 @@ namespace UserManagement.Data
             return users.FirstOrDefault(user => user.Id == id);
         }
 
+        public User Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int Save()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
