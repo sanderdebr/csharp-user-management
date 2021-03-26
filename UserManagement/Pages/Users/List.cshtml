@@ -8,7 +8,7 @@
     {
         <div class="flex space-x-4">
             <h3>@user.Id</h3>
-            <a asp-page="./User/@user.Id">
+            <a asp-page="./User" asp-route-userId="@user.Id">
                 @user.Name
             </a>
             <a asp-page="./Edit" asp-route-userId="@user.Id">Edit</a>
